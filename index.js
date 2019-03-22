@@ -4,7 +4,7 @@ var socket = require('socket.io');
 //App setup
 var app = express();
 
-var server = app.listen(1515, function() {
+var server = app.listen(process.env.PORT || 1515, function() {
   console.log('listening to requests in port 1515');
 });
 
@@ -16,4 +16,8 @@ var io = socket(server);
 
 io.on('connection', function(socket){
   console.log('made socket connection', socket.id);
+
+  socket.on('chat', function(data) {
+    io.sockets.emit('chat', data);
+  });
 });
