@@ -1,0 +1,17 @@
+{
+  "name": "web-sock",
+  "version": "1.0.0",
+  "description": "Making a live chat app with Express.js and SocketIO in order to practicing and learning about this technology.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Lecointere - ivanlecointere@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
